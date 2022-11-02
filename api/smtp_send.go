@@ -32,8 +32,11 @@ func smtpSendMail(toAddress string, toName string, contentType string, subject s
 	if err != nil {
 		return err
 	}
-
-	fromAddress := stdmail.Address{"Commento", os.Getenv("SMTP_FROM_ADDRESS")}
+	fromLabel, issetLavel :=  os.LookupEnv("SMTP_LABEL_FROM")
+	if !issetLavel {
+		fromLabel="Commento" 
+	}
+	fromAddress := stdmail.Address{fromLabel, os.Getenv("SMTP_FROM_ADDRESS")}
 	to := stdmail.Address{toName, toAddress}
 	email := mail.NewMSG()
 	email.SetFrom(fromAddress.String())
