@@ -3,12 +3,14 @@
 @import "checkbox.scss";
 @import "button.scss";
 
-.global-error, .global-ok {
+.global-error,
+.global-ok {
   position: absolute;
   bottom: 0px;
   left: 0px;
+  top: 40%;
   margin: 30px;
-  padding: 5px;
+  padding: 15px;
   border: 1px solid $red-6;
   background: $red-6;
   color: white;
@@ -60,7 +62,7 @@ body {
     }
   }
 
-  .content{
+  .content {
     display: none;
     padding: 12px;
 
@@ -68,13 +70,17 @@ body {
       color: $gray-6;
       margin-bottom: 24px;
       line-height: 22px;
-      
-      a       { color: $blue-6; }
-      a:hover { color: $blue-6; }
+
+      a {
+        color: $blue-6;
+      }
+      a:hover {
+        color: $blue-6;
+      }
     }
   }
 
-  .content.current{
+  .content.current {
     display: inherit;
   }
 }
@@ -333,7 +339,8 @@ body {
     transition: all 0.2s;
     color: $gray-7;
 
-    .setting-title, .setting-subtitle {
+    .setting-title,
+    .setting-subtitle {
       display: block;
     }
 
@@ -402,7 +409,7 @@ body {
   }
 
   li::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 4px;
     height: 4px;
@@ -545,7 +552,7 @@ body {
     padding-top: 0px;
     font-size: 19px;
   }
-  
+
   .box-subtitle {
     font-size: 14px;
     padding: 6px;
@@ -559,8 +566,14 @@ body {
     color: $gray-6;
     opacity: 0.8;
 
-    a       { color: $gray-6; border: none; }
-    a:hover { color: $gray-6; border: none; }
+    a {
+      color: $gray-6;
+      border: none;
+    }
+    a:hover {
+      color: $gray-6;
+      border: none;
+    }
   }
 
   .gray:hover {
@@ -622,9 +635,12 @@ body {
 }
 
 .stat {
-  -webkit-box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-  -moz-box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-  box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+  -webkit-box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
   margin: 20px;
   padding: 20px;
   display: block;
@@ -681,7 +697,7 @@ foreignObject {
 .all-done {
   margin-top: 40px;
   color: $gray-5;
-  font-size :15px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -738,9 +754,12 @@ foreignObject {
 }
 
 .comment {
-  -webkit-box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-  -moz-box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-  box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+  -webkit-box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
   width: calc(100% - 40px);
   background: white;
   border: 1px solid white;
@@ -780,7 +799,7 @@ foreignObject {
         float: left;
         margin-right: 12px;
       }
-      
+
       .names {
         margin-left: 50px;
 
@@ -790,7 +809,7 @@ foreignObject {
             font-weight: bold;
           }
         }
-        
+
         .time {
           color: $gray-4;
         }
