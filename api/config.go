@@ -46,6 +46,7 @@ func configParse() error {
 		"SMTP_HOST":             "",
 		"SMTP_PORT":             "",
 		"SMTP_FROM_ADDRESS":     "",
+		"SMTP_LABEL_FROM":       "Commento",	
 		"SMTP_SKIP_HOST_VERIFY": "false",
 
 		"AKISMET_KEY": "",
