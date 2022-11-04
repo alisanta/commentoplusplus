@@ -434,26 +434,10 @@
 
   function footerLoad() {
     var footer = create("div");
-    var aContainer = create("div");
-    var a = create("a");
-    var text = create("span");
 
     footer.id = ID_FOOTER;
 
     classAdd(footer, "footer");
-    classAdd(aContainer, "logo-container");
-    classAdd(a, "logo");
-    classAdd(text, "logo-text");
-
-    attrSet(a, "href", "https://github.com/souramoo/commentoplusplus");
-    attrSet(a, "target", "_blank");
-    attrSet(a, "rel", "noreferrer");
-
-    text.innerText = "Commento++";
-
-    append(a, text);
-    append(aContainer, a);
-    append(footer, aContainer);
 
     return footer;
   }
